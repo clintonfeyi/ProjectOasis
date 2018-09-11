@@ -51,7 +51,7 @@ const requestMod = require('request');
 
 const PubSub = require(`@google-cloud/pubsub`);
 //FILL YOUR GCLOUD PROJECT ID HERE
-const projectId = 'xxxxxxxxxxx';
+const projectId = 'weatherbox001';
 const pubsubClient = new PubSub({
   projectId: projectId,
 });
@@ -154,7 +154,7 @@ function cloudrainsunaction(app){
   }
 
   function weatherreport(app){
-    let apiKey = 'xxxxxxxxxxx'; //ADD your openweathermap API key here
+    let apiKey = '3893cfb43529b0f7bf8b3c32f73ff866'; //ADD your openweathermap API key here
 
     let voicedate = app.getArgument(DATE_ARGUMENT);
     let voicecity = app.getArgument(CITY_ARGUMENT);
